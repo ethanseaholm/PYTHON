@@ -5,10 +5,10 @@ class Human:
     def eat(self):
         print ("eating")
 
-    def shit(self):
-        print ("shitting")
+    def play(self):
+        print ("playing")
 
-    def sleep(sleep):
+    def sleep(self):
         print ("sleeping")
 
 class Baby (Human):
@@ -18,14 +18,16 @@ class Teenager (Human):
     pass
 
 class Adult (Human):
-    pass
+    
+    def sleep (Adult):
+        print ("tossing and turning")           # method overriding from the parent class
 
 baby = Baby()
 teenager = Teenager()
 adult = Adult()
 
-print (baby.alive)
-teenager.eat()
-adult.shit()
+baby.play()
+print (teenager.alive)
+adult.sleep()
 
 ###
