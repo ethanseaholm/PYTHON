@@ -170,4 +170,3 @@ elif profits == money_in:
 
 print("THANKS FOR PLAYING")
 print ()
-
