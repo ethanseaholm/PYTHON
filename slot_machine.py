@@ -18,7 +18,7 @@ while money_in.isalpha() == False:
 
         format_money_in = "{:.2f}".format(money_in)
         print ()
-        print ("You have inputted $", format_money_in, "into the machine")
+        print (f"You have inputted ${format_money_in} into the machine")
         break
 
     except ValueError as e:
@@ -44,7 +44,7 @@ while bet.isalpha() == False:
             bet = (float(input("ERROR, BET CANNOT BE HIGHER THAN YOUR BALANCE. TRY AGAIN: ")))
         format_bet = "{:.2f}".format(bet)
         print ()
-        print ("You are betting $", format_bet)
+        print (f"You are betting ${format_bet}")
         break
 
     except ValueError as e:
@@ -82,7 +82,7 @@ while True and profits != 0:
                 print ()
                 profits = (profits + (bet * 3))
                 format_profits = "{:.2f}".format(profits)
-                print ("YOU HAVE $", format_profits, "REMAINING")
+                print (f"YOU HAVE ${format_profits} REMAINING")
                 print ()
 
         elif random_choice_1 == random_choice_2 or random_choice_2 == random_choice_3 or random_choice_3 == random_choice_1:
@@ -90,14 +90,14 @@ while True and profits != 0:
                 print ()
                 profits = (profits + (bet * 2))
                 format_profits = "{:.2f}".format(profits)
-                print ("YOU HAVE $", format_profits, "REMAINING")
+                print (f"YOU HAVE ${format_profits} REMAINING")
                 print ()
 
         elif random_choice_1 != random_choice_2 and random_choice_2 != random_choice_3 and random_choice_3 != random_choice_1:
                 print ("BETTER LUCK NEXT TIME!")
                 print ()
                 format_profits = "{:.2f}".format(profits)
-                print ("YOU HAVE $", format_profits, "REMAINING")
+                print (f"YOU HAVE ${format_profits} REMAINING")
                 print ()
         
         if profits == 0:
@@ -132,7 +132,7 @@ while True and profits != 0:
                         bet = (float(input("ERROR, BET CANNOT BE HIGHER THAN YOUR BALANCE. TRY AGAIN: ")))
                     format_bet = "{:.2f}".format(bet)
                     print ()
-                    print ("You are betting $", format_bet)
+                    print (f"You are betting ${format_bet}")
                     print ()
                     break
 
@@ -151,7 +151,7 @@ if profits > money_in:
     format_final_profits = "{:.2f}".format(final_profits)
     format_profits = "{:.2f}".format(profits)
 
-    print ("YOU ARE WALKING AWAY WITH A $", format_final_profits, "PROFIT FOR A TOTAL OF $", format_profits)
+    print (f"YOU ARE WALKING AWAY WITH A ${format_final_profits} PROFIT FOR A TOTAL OF ${format_profits}")
     print ()
     
 elif profits < money_in and profits != 0:
@@ -161,7 +161,7 @@ elif profits < money_in and profits != 0:
     format_profits = "{:.2f}".format(profits)
     format_money_in = "{:.2f}".format(money_in)
     
-    print ("YOU LOST -$", format_loss, "FROM YOUR INPUT OF $", format_money_in, ". YOU ARE WALKING AWAY WITH A TOTAL OF $", format_profits)
+    print (f"YOU LOST -${format_loss} FROM YOUR INPUT OF ${format_money_in} AND YOU ARE WALKING AWAY WITH A TOTAL OF ${format_profits}")
     print ()
 
 elif profits == money_in:
