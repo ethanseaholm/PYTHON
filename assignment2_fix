@@ -1,0 +1,20 @@
+#
+
+from math import pi
+
+print ("")
+radius = float(input("Enter the sphere's radius using a floating-point number: "))
+
+while radius <= 0:
+    radius = float(input("Invalid input, try again: "))
+
+diameter = (radius * 2)
+circumference = (2 * pi * radius)
+surface_area = (4 * pi * (radius * radius))
+volume = ((4 / 3) * pi * (radius * radius * radius))
+
+print ("\nThe sphere's radius is", radius, "and therefore:\n")
+print ("The sphere's diameter is", diameter)
+print ("The sphere's circumference is", circumference)
+print ("The sphere's surface area is", surface_area)
+print ("The sphere's volume is", volume, "\n")

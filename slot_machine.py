@@ -12,9 +12,9 @@ while money_in.isalpha() == False:
 
         money_in = (float(input("How much money would you like to insert into the machine? ")))
         
-        while money_in == 0:
+        while money_in <= 0:
             print ()
-            money_in = (float(input("YOU CANNOT BET WITH NO MONEY, TRY AGAIN: ")))
+            money_in = (float(input("YOU CANNOT BET WITH NO MONEY OR LOWER, TRY AGAIN: ")))
 
         format_money_in = "{:.2f}".format(money_in)
         print ()
@@ -36,7 +36,7 @@ while bet.isalpha() == False:
     try:
 
         bet = (float(input("How much money would you like to bet? ")))
-        while bet == 0:
+        while bet <= 0:
             print ()
             bet = (float(input("INVALID BET, TRY AGAIN: ")))
         while bet > money_in:
@@ -170,3 +170,5 @@ elif profits == money_in:
 
 print("THANKS FOR PLAYING")
 print ()
+
+#

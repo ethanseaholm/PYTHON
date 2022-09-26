@@ -1,6 +1,6 @@
-while True:
-
 #
+
+while True:
 
     secret_word = "banana"
     guess = ""
@@ -40,3 +40,4 @@ while True:
 
 print ("THANKS FOR PLAYING!")
 
+#
